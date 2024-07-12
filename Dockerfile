@@ -37,8 +37,6 @@ RUN echo "[options]\n" \
     "dev_mode = True\n" \
     > $ODOO_CONF
 
-# Copy the configuration file template
-COPY odoo.conf $ODOO_CONF
 
 # Add entrypoint script
 COPY entrypoint.sh /entrypoint.sh
